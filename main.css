@@ -340,8 +340,8 @@ h1 {
   padding: 20px;
   background-color: #f9f9f9;
   text-align: left;
-  max-width: 20%;
-  max-height: 20%;
+  min-width: 20%;
+  height: 20%;
 }
 
 .cozy-section h2 {
@@ -569,17 +569,12 @@ footer {
     font-size: 1.5rem;
 
   }
-  .cozy-section p {
-    display: block;
-    display: -webkit-box;
-    height: 16px*1.3*3; /* chiều cao tương ứng với số dòng cần hiển thị */
-    font-size: 16px;
-    -webkit-line-clamp: 3; /* số dòng hiển thị */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+
   .products{
+    flex-direction: column; 
+    
+  }
+  .cozy{
     flex-direction: column; 
     
   }
@@ -594,6 +589,25 @@ footer {
   .product{
     margin-bottom: 40px;
   }
+  .cozy-section{
+    width: 90% !important;
+  }
+  .cozy-item{
+    margin: 0;
+  }
+  .footer-container {
+
+    font-size: 0.6rem;
+
+  }
+  footer{
+    margin: 0 50px;
+  }
+  .animated-button {
+    
+    top: 15%;
+    left: 35%;
+}
 }
 @media (max-width: 567px) {
 
@@ -602,18 +616,12 @@ footer {
     /* Giảm kích thước font */
 
 }
-.cozy-item img {
+.cozy-section{
+  width: 90% !important;
+}
 
-  height: 300px; 
-  width: 150px;
-  object-fit: cover;
-  /* margin-left: 3px; */
-  margin-right: -20px;
-  }
 
-  .cozy-section p {
-    display: none;
-  }
+
   /* .cozy-section h2 {
 
     font-size: 1.2rem;
