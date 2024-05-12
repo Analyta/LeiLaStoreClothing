@@ -1,0 +1,630 @@
+:root {
+  --maincolor: #184374;
+  --contentcolor: #FFFFFF;
+  --hovercolor: #02AAD8;
+}
+a{
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--contentcolor);
+
+
+}
+
+.navbar {
+  background-color:var(--maincolor);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  z-index: 10;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--contentcolor);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  background-color: var(--maincolor);
+  
+}
+.nav{
+  z-index: 10;
+
+}
+.navbar a:hover {
+  
+  border-bottom: var(--contentcolor) solid 3px;
+  /* font-weight: bold; */
+
+}
+
+.Logo{
+  position: relative;
+  left: 12%;
+  /* display: flex;
+  justify-content: right;
+  width: 80%; */
+  /* padding: 20px;
+  margin: 0 24px; */
+  border-color: var(--contentcolor) solid 1px;
+
+}
+.Logo img{
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  align-items: self-start;
+  
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner,
+.collection {
+  text-align: center;
+  width: 100%;
+}
+.underline{
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  align-items: center;
+  border-top: var(--hovercolor) solid 3px;
+  position: relative;
+  left: 50%;
+  font-weight: 600;
+  margin-top: 0.68rem;
+}
+.underline-2{
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  align-items: center;
+  border-top: var(--hovercolor) solid 3px;
+  position: relative;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.collection {
+  width: 100%;
+  background-color: var(--maincolor);
+
+  text-align: center;
+  height: 360px;
+}
+
+.collection h2 {
+  font-size: 3rem;
+  top: 20%;
+  position: relative;
+  color: white;
+ 
+}
+/* .collection span {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 40px 2px;
+  border-radius: 5px;
+  border: 4px solid #f2f2f2;
+  cursor: pointer;
+} */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin: 25px 0 0 0;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 50px 16px 30px;
+  gap: 4%;
+
+}
+.product img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px ;
+}
+/* .product span {
+  color: tomato;
+} */
+.card {
+  --bg-card:  #184374;
+  --primary: var(--hovercolor);
+  --primary-800: var(--light);
+  --primary-shadow: var(--hovercolor);
+  --light: #d9d9d9;
+  --zinc-800: #18181b;
+  --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card);
+
+  border-radius: 1rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.image_container {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+
+  border-radius: 0.5rem;
+}
+
+.image_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 3rem;
+  fill: var(--light);
+}
+
+.title {
+  overflow: clip;
+
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.size {
+  font-size: 0.75rem;
+  color: var(--light);
+}
+
+.list-size {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  margin-top: 0.25rem;
+}
+
+.list-size .item-list {
+  list-style: none;
+}
+
+.list-size .item-list-button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background-color: var(--zinc-800);
+
+  font-size: 0.75rem;
+  color: var(--light);
+
+  border: 2px solid var(--zinc-800);
+  border-radius: 0.25rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+  border: 2px solid var(--light);
+}
+.item-list-button:focus {
+  background-color: var(--primary);
+
+  border: 2px solid var(--primary-shadow);
+
+  box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.cart-button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 0.5rem;
+  width: 100%;
+  background-image: var(--bg-linear);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--light);
+  text-wrap: nowrap;
+
+  border: 2px solid hsla(199, 80%, 55%, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.25rem 1px var(--light);
+}
+.cart-button .cart-icon {
+  width: 1rem;
+}
+/* Ẩn bảng size của product thứ 3 */
+.product:nth-child(3) .size {
+  visibility: hidden;
+}
+
+/* Ẩn bảng size của product thứ 4 */
+.product:nth-child(4) .size {
+  visibility: hidden;
+}
+
+
+
+
+.cozy {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.cozy-item {
+  text-align: center;
+  margin: 20px;
+  width: 100%;
+  cursor: pointer ;
+}
+.cozy-item img {
+  width: 80%;
+  height: 80%;
+  border-radius: 8px ;
+  filter: grayscale(1);
+  transition: 0.2s;
+
+}
+.cozy-item :hover{
+  filter: grayscale(0);
+}
+/* CSS cho phần "Twice as Cozy" */
+.cozy-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: left;
+  min-width: 20%;
+  height: 20%;
+}
+
+.cozy-section h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cozy-section p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* aniation buton */
+.animated-button {
+  position: relative;
+  top: 16%;
+  left: 45%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: var(--hovercolor);
+  box-shadow: 0 0 0 2px var(--hovercolor);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: var(--hovercolor);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--hovercolor);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px var(--hovercolor);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+/*  */
+
+
+.product,
+.cozy-item {
+  text-align: center;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* CSS cho Footer */
+footer {
+  border-top: 3px solid #ddd;
+  background-color: white;
+  margin: 0 120px;
+
+  color: black;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  line-height: 1.4;
+  display: flex;
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+.footer-container div {
+  width: 33%;
+  text-align: center;
+}
+
+.footer-container h3 {
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-container li {
+  margin: 14px 0;
+
+}
+.footer-container ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+  text-decoration: underline;
+}
+.footer-contact p{
+  word-wrap: break-word;
+}
+.footer-bottom {
+  text-align: center;
+  background-color: var(--maincolor);
+  height: 50px;
+  margin: 0;
+  padding-top: 10px;
+  align-items: center;
+  display: grid;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--contentcolor);
+}
+
+/* animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+
+/* .showtotop{
+  opacity: 0;
+}
+:active .showtotop{
+  animation: showtop 1s ease-in-out 1 forwards;
+} */
+ .delay-02{
+  animation-delay: 0.2s !important;
+ }
+ .delay-04{
+  animation-delay: 0.4s !important;
+ }
+ .delay-06{
+  animation-delay: 0.6s !important;
+ }
+ .delay-08{
+  animation-delay: 0.8s !important;
+ }
+/* reponsive */
+/* CSS for larger screens */
+
+
+/* CSS for smaller screens */
+
+@media (max-width: 1120px) {
+  .navbar a {
+      font-size: 1.2rem; /* Giảm kích thước font */
+  }
+
+  .navbar a {
+    padding: 10px 12px; /* Giảm padding */
+  }
+  .cozy-section h2 {
+
+    font-size: 1.5rem;
+
+  }
+
+  .products{
+    flex-direction: column; 
+    
+  }
+  .cozy{
+    flex-direction: column; 
+    
+  }
+}
+@media (max-width: 768px) {
+  .Logo {
+    display: none; /* Ẩn logo */
+  }
+  .products{
+    flex-direction: column; 
+  }
+  .product{
+    margin-bottom: 40px;
+  }
+  .cozy-section{
+    width: 90% !important;
+  }
+  .cozy-item{
+    margin: 0;
+  }
+  .footer-container {
+
+    font-size: 0.6rem;
+
+  }
+  footer{
+    margin: 0 50px;
+  }
+  .animated-button {
+    
+    top: 15%;
+    left: 35%;
+}
+}
+@media (max-width: 567px) {
+
+  .navbar a {
+    font-size: 1rem; 
+    /* Giảm kích thước font */
+
+}
+.cozy-section{
+  width: 90% !important;
+}
+
+
+
+  /* .cozy-section h2 {
+
+    font-size: 1.2rem;
+
+  } */
+}
