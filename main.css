@@ -267,10 +267,12 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-content: space-between;
+
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--light);
 }
@@ -284,7 +286,7 @@ h1 {
   gap: 0.25rem;
 
   padding: 0.5rem;
-  width: 100%;
+  width: 40%;
   background-image: var(--bg-linear);
 
   font-size: 0.75rem;
@@ -297,7 +299,7 @@ h1 {
   box-shadow: inset 0 0 0.25rem 1px var(--light);
 }
 .cart-button .cart-icon {
-  width: 1rem;
+  width: 2rem;
 }
 /* Ẩn bảng size của product thứ 3 */
 .product:nth-child(3) .size {
