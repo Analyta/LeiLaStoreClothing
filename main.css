@@ -579,6 +579,10 @@ footer {
     flex-direction: column; 
     
   }
+  .underline {
+    left: 47%;
+  }
+
 }
 @media (max-width: 768px) {
   .Logo {
@@ -607,8 +611,9 @@ footer {
   .animated-button {
     
     top: 15%;
-    left: 35%;
+    left: 41%;
 }
+
 }
 @media (max-width: 567px) {
 
@@ -620,8 +625,14 @@ footer {
 .cozy-section{
   width: 90% !important;
 }
-
-
+.underline {
+  left: 46%;
+}
+.animated-button {
+    
+  top: 15%;
+  left: 35%;
+}
 
   /* .cozy-section h2 {
 
